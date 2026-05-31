@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio — Game Developer</title>
+<title>Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -14,22 +14,18 @@
 <div class="cursor" id="cursor"></div>
 <div class="cursor-ring" id="cursorRing"></div>
 
-<!-- NAV -->
 <nav id="navbar">
-  <a href="#" class="nav-logo">// DEVLOG.EXE</a>
+  <a href="#" class="nav-logo">// PORTFOLIO</a>
   <div class="nav-links">
     <a href="#about">About</a>
-    <a href="#proj">proj</a>
+    <a href="#proj">Project</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
 
-<!-- main -->
 <section id="main">
   <div class="grid"></div>
-
-
-  <div class="hero-text">
+  <div class="text">
     <div class="tag">
       <span id="status-text">AVAILABLE FOR OPPORTUNITIES</span><span class="blink">_</span>
     </div>
@@ -41,258 +37,207 @@
       Building interactive worlds from scratch - simulations, playable prototype and 3D arts. Focus on giving good feels to play.
     </p>
     <div class="cta">
-      <a href="#proj" class="btn-primary">View proj ↓</a>
-      <a href="#contact" class="btn-secondary">Get in Touch</a>
+      <a href="#proj" class="btn-prim">View project ↓</a>
+      <a href="#contact" class="btn-sec">Get in Touch</a>
     </div>
+  </div>
+
   <div class="prof-pic">
     <img src="prof-pic.png" alt="Aeshen">
   </div>
-  </div>
+
   <div class="stats">
-    <div class="stat-item">
-      <span class="stat-num" id="counter1">0</span>
-      <span class="stat-label">proj</span>
+    <div class="s-item">
+      <span class="s-num" id="counter1">0</span>
+      <span class="s-label">project</span>
     </div>
-    <div class="stat-item">
-      <span class="stat-num" id="counter2">0</span>
-      <span class="stat-label">Competitions</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-num" id="counter3">0</span>
-      <span class="stat-label">Languages</span>
+    <div class="s-item">
+      <span class="s-num" id="counter2">0</span>
+      <span class="s-label">Languages</span>
     </div>
   </div>
 
   <div class="scroll-indicator">Scroll to explore</div>
 </section>
 
-<!-- ABOUT -->
 <section id="about">
-  <div class="section-header fade-up">
-    <span class="section-num">01</span>
-    <h2 class="section-title">About Me</h2>
-    <div class="section-line"></div>
+  <div class="sec-header fade-up">
+    <span class="sec-num">01</span>
+    <h2 class="sec-title">About Me</h2>
+    <div class="sec-line"></div>
   </div>
   <div class="about-grid">
     <div class="about-text fade-up">
-      <p>I'm an <strong>aspiring game developer</strong> with a foundation across the full stack of game creation — from low-level <strong>C++ systems</strong> to real-time simulation, 3D modelling, and rapid prototyping with game engines.</p>
-      <p>This year I deliberately pushed into unfamiliar territory: building a <strong>physics-based drone simulation</strong>, competing under pressure in a <strong>Blender competition</strong>, and shipping multiple playable builds. Every proj taught me more than any tutorial could.</p>
-      <p>I'm drawn to the intersection of <strong>technical systems</strong> and <strong>player experience</strong> — the place where a well-tuned physics parameter makes something suddenly <em>feel alive</em>.</p>
+      <p>I'm a <strong>junior game developer</strong> with a foundation across the full stack of game creation — from <strong>C++ systems</strong> to real-time simulation, 3D modelling, and prototyping with game engines.</p>
+      <p>This year I tried many unfamiliar territory: building a <strong>physics-based drone simulation</strong>, competing  in a <strong>Blender competition</strong>, and creating multiple playable builds. Every project taught me more than any tutorial could.</p>
+      <p>I'm drawn to  <strong>technical systems</strong> and <strong>player experience</strong>.
     </div>
     <div class="skills-list fade-up">
-      <div class="skill-item">
-        <div class="skill-meta">
-          <span class="skill-name">C++ / Systems</span>
-          <span class="skill-level">Intermediate</span>
+      <div class="sk-item">
+        <div class="sk-meta">
+          <span class="sk-name">C++ </span>
+          <span class="sk-level">Intermediate</span>
         </div>
-        <div class="skill-bar"><div class="skill-fill" data-width="68"></div></div>
+        <div class="sk-bar"><div class="sk-fill" data-width="60"></div></div>
       </div>
-      <div class="skill-item">
-        <div class="skill-meta">
-          <span class="skill-name">GDevelop / Prototyping</span>
-          <span class="skill-level">Comfortable</span>
+      <div class="sk-item">
+        <div class="sk-meta">
+          <span class="sk-name">GDevelop </span>
+          <span class="sk-level">Profecient</span>
         </div>
-        <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+        <div class="sk-bar"><div class="sk-fill" data-width="72"></div></div>
       </div>
-      <div class="skill-item">
-        <div class="skill-meta">
-          <span class="skill-name">Blender / 3D Modelling</span>
-          <span class="skill-level">Growing</span>
+      <div class="sk-item">
+        <div class="sk-meta">
+          <span class="sk-name">Blender</span>
+          <span class="sk-level">Competent</span>
         </div>
-        <div class="skill-bar"><div class="skill-fill" data-width="55"></div></div>
+        <div class="sk-bar"><div class="sk-fill" data-width="55"></div></div>
       </div>
-      <div class="skill-item">
-        <div class="skill-meta">
-          <span class="skill-name">Physics Simulation</span>
-          <span class="skill-level">Exploring</span>
+      <div class="sk-item">
+        <div class="sk-meta">
+          <span class="sk-name">Css</span>
+          <span class="sk-level">Profecient</span>
         </div>
-        <div class="skill-bar"><div class="skill-fill" data-width="48"></div></div>
+        <div class="sk-bar"><div class="sk-fill" data-width="70"></div></div>
       </div>
-      <div class="skill-item">
-        <div class="skill-meta">
-          <span class="skill-name">Game Design Fundamentals</span>
-          <span class="skill-level">Learning</span>
+      <div class="sk-item">
+        <div class="sk-meta">
+          <span class="sk-name">JAVASCRIPT</span>
+          <span class="sk-level">Competent</span>
         </div>
-        <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+        <div class="sk-bar"><div class="sk-fill" data-width="55"></div></div>
+      </div>
+      <div class="sk-item">
+        <div class="sk-meta">
+          <span class="sk-name">HTML</span>
+          <span class="sk-level">Profecient</span>
+        </div>
+        <div class="sk-bar"><div class="sk-fill" data-width="70"></div></div>
+      </div>
+      <div class="sk-item">
+        <div class="sk-meta">
+          <span class="sk-name">UNREAL</span>
+          <span class="sk-level">Competent</span>
+        </div>
+        <div class="sk-bar"><div class="sk-fill" data-width="60"></div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- proj -->
 <section id="proj">
-  <div class="section-header fade-up">
-    <span class="section-num">02</span>
-    <h2 class="section-title">Selected Work</h2>
-    <div class="section-line"></div>
+  <div class="sec-header fade-up">
+    <span class="sec-num">02</span>
+    <h2 class="sec-title">Selected Work</h2>
+    <div class="sec-line"></div>
   </div>
 
   <div class="proj-grid">
 
     <!-- Drone Sim — Featured -->
     <div class="proj-card featured fade-up">
-      <div class="proj-bg" style="background: radial-gradient(circle at 30% 50%, rgba(200,241,53,0.04), transparent 60%);"></div>
+      <div class="proj-bg" style="background: radial-gradient(circle at 30% 50%, #c8f1350a , transparent 60%);"></div>
       <div>
         <div class="proj-tag">Simulation</div>
-        <h3 class="proj-title">Drone Flight<br>Simulation</h3>
-        <p class="proj-desc">A physics-based UAV simulation workshop exploring real-time flight modelling, control input mapping, and environmental response systems. The kind of simulation work that crosses over directly into defence, aerospace, and open-world game development.</p>
+        <h3 class="proj-title">Drone Flight<br>Monitoring System</h3>
+        <p class="proj-desc">A physics-based drone simulation using C++ and Xampp database to control and record real-time flight data. Environment and asset created using Unreal engine 4.27.</p>
         <div class="proj-tech">
-          <span class="tech-pill">Physics</span>
-          <span class="tech-pill">Flight Model</span>
-          <span class="tech-pill">Simulation</span>
-          <span class="tech-pill">C++</span>
+          <span class="tech">Physics</span>
+          <span class="tech">Flight Model</span>
+          <span class="tech">Simulation</span>
+          <span class="tech">C++</span>
+          <span class="tech">Unreal</span>
         </div>
         <div class="proj-insight">
-          <p><strong>Key insight:</strong> Getting a flight model to feel "right" is more about tuning damping curves than raw physics accuracy. Learned that player feel always wins over simulation fidelity.</p>
+          <p><strong>Key insight:</strong> Able to manually fly a drone with API controls using C++ and learn new knowledge about drones.</p>
         </div>
-        <a href="#" class="proj-link">View details</a>
       </div>
       <div class="proj-visual">
-        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
-          <rect width="400" height="300" fill="#0e0e14"/>
-          <!-- Grid lines -->
-          <g stroke="rgba(200,241,53,0.08)" stroke-width="0.5">
-            <line x1="0" y1="50" x2="400" y2="50"/>
-            <line x1="0" y1="100" x2="400" y2="100"/>
-            <line x1="0" y1="150" x2="400" y2="150"/>
-            <line x1="0" y1="200" x2="400" y2="200"/>
-            <line x1="0" y1="250" x2="400" y2="250"/>
-            <line x1="80" y1="0" x2="80" y2="300"/>
-            <line x1="160" y1="0" x2="160" y2="300"/>
-            <line x1="240" y1="0" x2="240" y2="300"/>
-            <line x1="320" y1="0" x2="320" y2="300"/>
-          </g>
-          <!-- HUD elements -->
-          <text x="12" y="24" font-family="'Share Tech Mono', monospace" font-size="8" fill="rgba(200,241,53,0.6)">ALT: 42.3m</text>
-          <text x="12" y="36" font-family="'Share Tech Mono', monospace" font-size="8" fill="rgba(200,241,53,0.6)">SPD: 12.7 m/s</text>
-          <text x="300" y="24" font-family="'Share Tech Mono', monospace" font-size="8" fill="rgba(200,241,53,0.6)">HDG: 247°</text>
-          <text x="300" y="36" font-family="'Share Tech Mono', monospace" font-size="8" fill="rgba(200,241,53,0.6)">BAT: 87%</text>
-          <!-- Horizon line -->
-          <line x1="50" y1="160" x2="350" y2="150" stroke="rgba(200,241,53,0.3)" stroke-width="1"/>
-          <circle cx="200" cy="155" r="3" fill="none" stroke="rgba(200,241,53,0.5)" stroke-width="1"/>
-          <!-- Drone group -->
-          <g class="drone-body" transform-origin="200 140" style="animation: hover-drone 3s ease-in-out infinite">
-            <!-- Arms -->
-            <line x1="160" y1="140" x2="130" y2="120" stroke="#c8f135" stroke-width="2" opacity="0.8"/>
-            <line x1="240" y1="140" x2="270" y2="120" stroke="#c8f135" stroke-width="2" opacity="0.8"/>
-            <line x1="160" y1="140" x2="130" y2="160" stroke="#c8f135" stroke-width="2" opacity="0.8"/>
-            <line x1="240" y1="140" x2="270" y2="160" stroke="#c8f135" stroke-width="2" opacity="0.8"/>
-            <!-- Body -->
-            <rect x="162" y="132" width="76" height="18" rx="4" fill="#1a1a22" stroke="#c8f135" stroke-width="1.5" opacity="0.9"/>
-            <rect x="186" y="128" width="28" height="8" rx="2" fill="#111116" stroke="rgba(200,241,53,0.4)" stroke-width="1"/>
-            <!-- Propellers -->
-            <g style="transform-origin: 130px 120px; animation: spin-prop 0.08s linear infinite">
-              <ellipse cx="130" cy="120" rx="22" ry="4" fill="none" stroke="rgba(200,241,53,0.5)" stroke-width="1.5"/>
-            </g>
-            <g style="transform-origin: 270px 120px; animation: spin-prop 0.08s linear infinite reverse">
-              <ellipse cx="270" cy="120" rx="22" ry="4" fill="none" stroke="rgba(200,241,53,0.5)" stroke-width="1.5"/>
-            </g>
-            <g style="transform-origin: 130px 160px; animation: spin-prop 0.08s linear infinite reverse">
-              <ellipse cx="130" cy="160" rx="22" ry="4" fill="none" stroke="rgba(200,241,53,0.5)" stroke-width="1.5"/>
-            </g>
-            <g style="transform-origin: 270px 160px; animation: spin-prop 0.08s linear infinite">
-              <ellipse cx="270" cy="160" rx="22" ry="4" fill="none" stroke="rgba(200,241,53,0.5)" stroke-width="1.5"/>
-            </g>
-            <!-- Motor dots -->
-            <circle cx="130" cy="120" r="4" fill="#c8f135" opacity="0.9"/>
-            <circle cx="270" cy="120" r="4" fill="#c8f135" opacity="0.9"/>
-            <circle cx="130" cy="160" r="4" fill="#c8f135" opacity="0.9"/>
-            <circle cx="270" cy="160" r="4" fill="#c8f135" opacity="0.9"/>
-            <!-- LED -->
-            <circle cx="200" cy="141" r="3" fill="#7b61ff" opacity="0.9"/>
-          </g>
-          <!-- Crosshair rings -->
-          <circle cx="200" cy="155" r="50" fill="none" stroke="rgba(200,241,53,0.1)" stroke-width="1" stroke-dasharray="4 4"/>
-          <circle cx="200" cy="155" r="80" fill="none" stroke="rgba(200,241,53,0.06)" stroke-width="1" stroke-dasharray="2 6"/>
-          <!-- Status text -->
-          <text x="200" y="285" font-family="'Share Tech Mono', monospace" font-size="9" fill="rgba(200,241,53,0.4)" text-anchor="middle">● TELEMETRY ACTIVE</text>
-        </svg>
-      </div>
+  <video src="drone.mp4" autoplay muted loop playsinline alt="Drone Simulation Screenshot" style="width:100%; height:100%; object-fit:fill; display:block;">
+</div>
     </div>
 
-    <!-- Blender -->
     <div class="proj-card fade-up">
-      <div class="proj-bg" style="background: radial-gradient(circle at 70% 50%, rgba(123,97,255,0.06), transparent 60%);"></div>
+      <div class="proj-bg" style="background: radial-gradient(circle at 70% 50%,  #7b61ff0f, transparent 60%);"></div>
       <div class="proj-tag">3D Art / Competition</div>
       <h3 class="proj-title">Blender<br>Competition Entry</h3>
-      <p class="proj-desc">Competed under a defined theme with a strict deadline. Designed, modelled, textured and rendered a complete scene from scratch. Working within creative constraints pushed more inventive solutions than any free-form proj.</p>
+      <p class="proj-desc">Competed in creating an ideal concept room. Designed, modelled, materialized a complete scene from scratch. Able to compete with other outstanding projects.</p>
       <div class="proj-tech">
-        <span class="tech-pill">Blender</span>
-        <span class="tech-pill">3D Modelling</span>
-        <span class="tech-pill">Materials</span>
-        <span class="tech-pill">Rendering</span>
+        <span class="tech">Blender</span>
+        <span class="tech">3D Modelling</span>
+        <span class="tech">Materials</span>
+        <span class="tech">Rendering</span>
       </div>
       <div class="proj-insight">
-        <p><strong>Process:</strong> Concept sketch → blockout → detail pass → materials. If I rebuilt this, I'd plan the lighting at the blockout stage — it shapes everything.</p>
+        <p><strong>Key insight:</strong> Able to design, model, try out different materials. If rebuilt this, maybe improve the lighting.</p>
       </div>
-      <a href="#" class="proj-link">View render</a>
+      <br><div class="blender">
+      <img src="blender.png" alt="Blender">
+      </div>
     </div>
 
-    <!-- GDev -->
     <div class="proj-card fade-up">
-      <div class="proj-bg" style="background: radial-gradient(circle at 30% 70%, rgba(255,107,53,0.06), transparent 60%);"></div>
+      <div class="proj-bg" style="background: radial-gradient(circle at 30% 70%, #ff6b350f, transparent 60%);"></div>
       <div class="proj-tag">Game Prototype</div>
       <h3 class="proj-title">GDevelop<br>Prototypes</h3>
-      <p class="proj-desc">Multiple playable builds made in GDevelop — from simple one-mechanic experiments to more complete loop prototypes. Focused on: does this feel good to control? Does the player understand what to do in 10 seconds?</p>
+      <p class="proj-desc">Multiple playable builds made in GDevelop — Able to understand the logic behind every action and reaction implemented in the game.</p>
       <div class="proj-tech">
-        <span class="tech-pill">GDevelop</span>
-        <span class="tech-pill">Game Design</span>
-        <span class="tech-pill">Rapid Prototyping</span>
+        <span class="tech">GDevelop</span>
+        <span class="tech">Game Design</span>
+        <span class="tech">Rapid Prototyping</span>
       </div>
       <div class="proj-insight">
-        <p><strong>Lesson:</strong> The hardest part is cutting mechanics that feel clever but break the core loop. Scope discipline is the skill, not scope size.</p>
+        <p><strong>Key insight:</strong> The hardest part is cutting mechanics that feel clever but break the core loop. Scope discipline is the sk, not scope size.<br></p>
       </div>
-      <a href="#" class="proj-link">Play on itch.io</a>
+      <br><div class="blender">
+      <video src="gdev.mp4" autoplay muted loop playsinline alt="Blender">
+      </div>
     </div>
 
-    <!-- C++ -->
     <div class="proj-card fade-up" style="grid-column: span 2;">
-      <div class="proj-bg" style="background: radial-gradient(circle at 50% 100%, rgba(200,241,53,0.04), transparent 50%);"></div>
+      <div class="proj-bg" style="background: radial-gradient(circle at 50% 100%,  #c8f1350a, transparent 50%);"></div>
       <div class="proj-tag">Systems Programming</div>
-      <h3 class="proj-title">C++ Systems Work</h3>
-      <p class="proj-desc">Low-level C++ explorations covering data structures, memory management, and the kind of performance-oriented thinking that underlies every AAA game engine. Includes implementations relevant to game systems — state machines, entity management patterns, and algorithmic problem solving.</p>
+      <h3 class="proj-title">C++ Snake Mania</h3> <p class="proj-desc">Able to understand how c++ works in game programming, the algorithms, conditions, what data type suitable for each game. </p>
       <div class="proj-tech">
-        <span class="tech-pill">C++</span>
-        <span class="tech-pill">Data Structures</span>
-        <span class="tech-pill">Memory</span>
-        <span class="tech-pill">Algorithms</span>
-        <span class="tech-pill">OOP</span>
+        <span class="tech">C++</span>
+        <span class="tech">Data Structures</span>
+        <span class="tech">Memory</span>
+        <span class="tech">Algorithms</span>
+        <span class="tech">OOP</span>
       </div>
       <div style="display: flex; gap: 2rem; margin-top: 1.5rem; flex-wrap: wrap;">
         <div class="proj-insight" style="flex: 1; min-width: 200px;">
-          <p><strong>Focus:</strong> Understanding <em>why</em> engines make the architectural decisions they do — cache-friendly layouts, component patterns, avoiding dynamic allocation in hot paths.</p>
+          <p><strong>Key insights:</strong> Understanding why engines make the architectural decisions they do — cache-friendly layouts, component patterns, avoiding dynamic allocation in hot paths.</p>
         </div>
-        <div>
-          <a href="#" class="proj-link">GitHub →</a>
-        </div>
+        <div class="blender">
+      <video src="snake.mp4" autoplay muted loop playsinline alt="Blender">
+      </div>
       </div>
     </div>
 
   </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
   <div class="fade-up">
-    <div class="section-header" style="justify-content: center; margin-bottom: 2rem;">
-      <span class="section-num">03</span>
-      <h2 class="section-title">Let's Build Something</h2>
+    <div class="sec-header" style="justify-content: center; margin-bottom: 2rem;">
+      <span class="sec-num">03</span>
+      <h2 class="sec-title">Let's Build Something</h2>
     </div>
-    <p class="contact-big">Open to<br><span>internships</span> &amp;<br>collaborations</p>
-    <p class="contact-sub">Whether you're a studio looking for a junior developer or a team wanting an extra pair of hands on a jam — I'm interested.</p>
+    <p class="contact-big">Open to<br><span>internships</span> &amp;<br>opportunities</p>
+    <p class="contact-sub">Whether you're a studio looking for a junior developer or a team wanting an extra pair of hands — I'm interested.</p>
     <div class="contact-links">
-      <a href="mailto:your@email.com" class="btn-primary">Send Email</a>
-      <a href="https://github.com/Aeshennn/aeshen.github.io" target="_blank" class="btn-secondary">GitHub</a>
-      <a href="https://linkedin.com" target="_blank" class="btn-secondary">LinkedIn</a>
-      <a href="https://itch.io" target="_blank" class="btn-secondary">itch.io</a>
+      <a href="mailto:aeshenlee2004@email.com" class="btn-prim">Send Email</a>
+      <a href="https://github.com/Aeshennn/aeshen.github.io" target="_blank" class="btn-sec">GitHub</a>
+      <a href="https://www.linkedin.com/in/lee-ae-shen-60454831b/" target="_blank" class="btn-sec">LinkedIn</a>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <span>© 2026 — Aeshen</span>
-  <span>Built in HTML/CSS/JS</span>
+  <span>Proposal</span>
 </footer>
 
 <script src="script.js"></script>

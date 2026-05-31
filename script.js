@@ -1,4 +1,3 @@
-// Custom cursor
 const cursor = document.getElementById('cursor');
 const ring = document.getElementById('cursorRing');
 
@@ -20,12 +19,10 @@ document.querySelectorAll('a, button').forEach(el => {
   });
 });
 
-// Navbar scroll effect
 window.addEventListener('scroll', () => {
   document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
 });
 
-// Fade-up on scroll
 const fadeObs = new IntersectionObserver((entries) => {
   entries.forEach((entry, i) => {
     if (entry.isIntersecting) {
@@ -36,11 +33,10 @@ const fadeObs = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 document.querySelectorAll('.fade-up').forEach(el => fadeObs.observe(el));
 
-// Skill bar animation
 const skillObs = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      entry.target.querySelectorAll('.skill-fill').forEach(bar => {
+      entry.target.querySelectorAll('.sk-fill').forEach(bar => {
         bar.style.width = bar.dataset.width + '%';
       });
       skillObs.unobserve(entry.target);
@@ -49,7 +45,6 @@ const skillObs = new IntersectionObserver((entries) => {
 }, { threshold: 0.3 });
 document.querySelectorAll('.skills-list').forEach(el => skillObs.observe(el));
 
-// Counter animation
 function animateCounter(el, target, duration = 1500) {
   let start = 0;
   const step = timestamp => {
@@ -62,19 +57,16 @@ function animateCounter(el, target, duration = 1500) {
   requestAnimationFrame(step);
 }
 
-// Trigger counters on load (hero is visible immediately)
 setTimeout(() => {
   animateCounter(document.getElementById('counter1'), 4);
-  animateCounter(document.getElementById('counter2'), 1);
-  animateCounter(document.getElementById('counter3'), 3);
+  animateCounter(document.getElementById('counter2'), 7);
 }, 800);
 
-// Typing / typewriter effect on hero status tag
-const status = [
+const statuses = [
   'AVAILABLE FOR OPPORTUNITIES',
   'BUILDING GAME SYSTEMS',
   'LEARNING EVERY DAY',
-  'OPEN TO GAME JAMS'
+  'OPEN TO GAME FREAKS'
 ];
 let si = 0, ci = 0, deleting = false;
 const statusEl = document.getElementById('status-text');
