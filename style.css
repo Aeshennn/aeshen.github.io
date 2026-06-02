@@ -7,7 +7,7 @@
   --accent3: #ff6b35;
   --text: #e8e8f0;
   --muted: #6b6b7e;
-  --border: rgba(200,241,53,0.15);
+  --border: #c8f13526;
   --mono: 'Share Tech Mono', monospace;
   --display: 'Syne', sans-serif;
   --body: 'DM Sans', sans-serif;
@@ -77,7 +77,7 @@ nav {
   transition: border-color 0.3s, background 0.3s;
 }
 nav.scrolled {
-  background: rgba(10,10,12,0.85);
+  background: #0a0a0cd9;
   backdrop-filter: blur(12px);
   border-color: var(--border);
 }
@@ -100,7 +100,6 @@ nav.scrolled {
 }
 .nav-links a:hover { color: var(--accent); }
 
-/* Hero */
 #main {
   min-height: 100vh;
   display: flex;
@@ -117,8 +116,8 @@ nav.scrolled {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(200,241,53,0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(200,241,53,0.04) 1px, transparent 1px);
+    linear-gradient(#c8f1350a 1px, transparent 1px),
+    linear-gradient(90deg, #c8f1350a 1px, transparent 1px);
   background-size: 60px 60px;
   mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 100%);
 }
@@ -267,25 +266,25 @@ nav.scrolled {
 
 section { padding: 7rem 3rem; }
 
-.sec-header {
+.header {
   display: flex;
   align-items: center;
   gap: 1.5rem;
   margin-bottom: 4rem;
 }
-.sec-num {
+.num {
   font-family: var(--mono);
   font-size: 11px;
   color: var(--accent);
   letter-spacing: 0.15em;
 }
-.sec-title {
+.title {
   font-family: var(--display);
   font-size: clamp(1.8rem, 3vw, 2.5rem);
   font-weight: 800;
   letter-spacing: -0.02em;
 }
-.sec-line {
+.line {
   flex: 1;
   height: 1px;
   background: var(--border);
@@ -311,6 +310,247 @@ section { padding: 7rem 3rem; }
 }
 .about-text p strong { color: var(--text); font-weight: 500; }
 
+#academic {
+  background: var(--bg2);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.academic-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.tl-item {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.tl-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  padding-top: 4px;
+}
+
+.tl-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--muted);
+  background: var(--bg2);
+}
+
+.tl-item.current .tl-dot {
+  border-color: var(--accent);
+  background: var(--accent);
+  box-shadow: 0 0 8px #c8f13566;
+}
+
+.tl-line {
+  width: 1px;
+  flex: 1;
+  min-height: 2rem;
+  background: #ffffff12;
+  margin-top: 4px;
+}
+
+.tl-card {
+  padding-bottom: 3rem;
+  flex: 1;
+}
+
+.tl-period {
+  display: block;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.tl-badge {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #0a0a0c;
+  background: var(--accent);
+  padding: 2px 8px;
+  margin-bottom: 0.6rem;
+}
+
+.tl-title {
+  font-family: var(--display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.25rem;
+  line-height: 1.3;
+}
+
+.tl-inst {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+  margin-bottom: 0.2rem;
+}
+
+.tl-spec {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.tl-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.tl-detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.tl-detail-label {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.tl-detail-val {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--text);
+}
+
+.tl-detail-val.accent { color: var(--accent); }
+
+.tl-courses { margin-top: 0.75rem; }
+
+.tl-course-label {
+  display: block;
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.tl-course-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.academic-right {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.acad-block-title {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.achievement-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.ach-item {
+  display: flex;
+  gap: 0.85rem;
+  align-items: flex-start;
+}
+
+.ach-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+  margin-top: 7px;
+}
+
+.ach-name {
+  font-size: 13px;
+  color: var(--text);
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.ach-desc {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.cert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.cert-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ffffff0d;
+  background: var(--bg3);
+  transition: border-color 0.2s;
+}
+
+.cert-item:hover { border-color: var(--border); }
+
+.cert-icon {
+  font-family: var(--mono);
+  font-size: 9px;
+  color: var(--accent);
+  border: 1px solid var(--border);
+  padding: 4px 6px;
+  min-width: 36px;
+  text-align: center;
+}
+
+.cert-name {
+  font-size: 13px;
+  color: var(--text);
+  margin-bottom: 2px;
+}
+
+.cert-source {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--muted);
+}
+
 .sk-item { margin-bottom: 1.75rem; }
 .sk-meta {
   display: flex;
@@ -331,7 +571,7 @@ section { padding: 7rem 3rem; }
 }
 .sk-bar {
   height: 2px;
-  background: rgba(255,255,255,0.06);
+  background: #ffffff0f;
   overflow: hidden;
 }
 .sk-fill {
@@ -427,7 +667,7 @@ section { padding: 7rem 3rem; }
   font-size: 10px;
   letter-spacing: 0.1em;
   color: var(--muted);
-  border: 1px solid rgba(107,107,126,0.3);
+  border: 1px solid #6b6b7e4d;
   padding: 3px 10px;
   text-transform: uppercase;
 }
